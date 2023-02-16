@@ -151,6 +151,7 @@ CONFIG_PPS_CLIENT_LDISC=m
     - ```modprobe pps_ldisc``` before starting gpsd or restart gpsd after the modprobe
     - Do this after every reboot
     - Without module pps_ldisc, PPS capabilities will not be available
+- Run ```ldattach 18 /dev/ttyS1``` attach /dev/ttyS1 to /dev/ppsx
 
 ## Configure serial port
 - Strictly **NOT REQUIRED** just for testing PPS with gpsd. All setserial is used for is setting the serial port into **low_latency** mode - may improve PPS latency / accuracy
